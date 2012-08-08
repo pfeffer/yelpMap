@@ -1,0 +1,2 @@
+module UserMapHelper
+end
