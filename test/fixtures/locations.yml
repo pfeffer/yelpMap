@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  yelp_id: 1
+  comment: MyString
+  rating: 1
+
+two:
+  yelp_id: 1
+  comment: MyString
+  rating: 1

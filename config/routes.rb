@@ -1,6 +1,13 @@
 Yelpmap::Application.routes.draw do
   
   root to: "user_map#index"
+  
+  #resources :sessions, only: [:create, :destroy]
+  # match '/login',   to: 'sessions#create'
+  # match '/logout',  to: 'sessions#destroy'
+  
+  match '/login', to: 'users#create_login'
+  match '/logout', to: 'users#logout'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

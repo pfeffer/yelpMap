@@ -4,11 +4,24 @@
   <title>My Yelp Map</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDhRPSh3X2b3goMp4DcBLd855DGDv1iO48&sensor=false">
+  </script>
+  <script type="text/javascript" src="http://oauth.googlecode.com/svn/code/javascript/oauth.js"></script>
+  <script type="text/javascript" src="http://oauth.googlecode.com/svn/code/javascript/sha1.js"></script>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+    <div id="fb-root"></div>
+    <div id="fb-buttons">
+        <div id="fb-login-link" class="btn" >Log in with Facebook</div>
+        <div id="fb-logout-link" class="btn" style="display:none;">Log out</div>
+    </div>
+    
+    <div id='wrap' class="clearfix">
+    	<%= yield %>
+    </div>
+    
+    <%= javascript_include_tag "main" %>
+    <%= render 'layouts/facebook' %>    
 </body>
 </html>

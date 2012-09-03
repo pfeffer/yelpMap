@@ -14,7 +14,7 @@
 //= require jquery_ujs
 //= require bootstrap
 
-//= require underscore-min
-//= require backbone-min
-
-//= require_tree .
+//= require jquery.ui.core
+//= require jquery.ui.widget
+//= require jquery.ui.mouse
+//= require jquery.ui.slider
